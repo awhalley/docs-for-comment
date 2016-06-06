@@ -17,11 +17,11 @@ The Subscriber’s CA should send an email addressing each of the following poin
 
 1. The name and contact details of the Subscriber.
 2. A description of the infrastructure that requires SHA-1 Certificates for correct operation.
-3. A detailed description of what steps have already been taken remediate the situation without needing a new SHA-1 Certificate (such as issuing from a pulled root), and why have they failed.
+3. A detailed description of what steps have already been taken remediate the situation without needing a new SHA-1 Certificate (such as issuing from a pulled root), and why they have failed.
 4. When would new SHA-1 Certificates need to be issued to ensure continuity?
 5. A detailed description of the impact if new SHA-1 Certificates are not obtained before that date.
 6. What is the anticipated date the transition from SHA-1 Certificates will be complete?
-7. When and how did the Subscriber first became aware of the SHA-1 sunset?
+7. When and how did the Subscriber first become aware of the SHA-1 sunset?
 8. What procedures are in place to ensure a similar exception will not be required when standards currently in use are deprecated?
 9. The number of Requested Certificates.
 For each Requested Certificate:
@@ -36,7 +36,7 @@ For each Requested Certificate:
 
 ### Existing Certificate Information
 
-Ideally the proposed tbsCertificate should correspond to an Existing Certificate logged in at least two Certificate Transparency log trusted by one or more Application Software Suppliers, with an audit proof to a Signed Tree Head with a timestamp prior to 1st January 2016 and differing only by:
+Ideally the proposed tbsCertificate should correspond to an Existing Certificate logged in at least two Certificate Transparency logs trusted by one or more Application Software Suppliers, with an audit proof to a Signed Tree Head with a timestamp prior to 1st January 2016 and differing only by:
 
 * signature AlgorithmIdentifier
 * Serial Number, which must have at least 60 bits of entropy
@@ -44,7 +44,7 @@ Ideally the proposed tbsCertificate should correspond to an Existing Certificate
 
 If the Existing Certificate was not logged prior to 1st January 2016, any evidence that might help establish when the Existing Certificate's key pair was created should be provided if available.
 
-If other fields than those listed above need to change (for example if a new issuer is needed because the original subordinate CA is no longer operating) then each discrepancy should be explained and crt.sh links provided to certificates which show the values are expected. Failing that, other evidence that the mismatching values have expected values such as links to CP/CPSs should be provided.
+If other fields than those listed above need to change (for example if a new issuer is needed because the original subordinate CA is no longer operating) then each discrepancy should be explained and crt.sh links provided to certificates which show the values that are expected. Failing that, other evidence that the mismatching values have expected values such as links to CP/CPSs should be provided.
 
 If a new key pair must be used for the new SHA-1 Certificate being requested, details of how and by whom the new key was generated must be supplied along with an explanation of why a new key was needed.
 
@@ -87,7 +87,7 @@ The response must be S/MIME or PGP signed in a way that the requesting CA can va
 If the CA wishes to continue with issuance, for each certificate:
 
 * The CA must perform at least OV level vetting
-* The Exceptionally Issued Certificate must be submitted to and accepted by at least two Certificate Transparency log trusted by one or more Application Software Suppliers.
+* The Exceptionally Issued Certificate must be submitted to and accepted by at least two Certificate Transparency logs trusted by one or more Application Software Suppliers.
 * The CA must reply to public@cabforum.org with details of the issuance including:
 	* The Exceptionally Issued Certificate in PEM format.
 	* A crt.sh link to the Exceptionally Issued Certificate.
