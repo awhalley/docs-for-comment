@@ -80,7 +80,7 @@ At some point after 10 business days have elapsed, Application Software Supplier
 * Grant the exception for a subset of Requested Certificates.
 * Grant the exception for all Requested Certificates.
 
-The response must be S/MIME or PGP signed in a way that the requesting CA can validate the authenticity of the request.
+The response must be S/MIME or PGP signed in a way that the requesting CA can validate the authenticity of the request, and must CC public@cabforum.org 
 
 ## Step Four: Issuance
 
