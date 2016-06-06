@@ -1,6 +1,6 @@
 # Post Jan 2016 SHA-1 Issuance Request Procedure
 
-	Version 1.0 - June 3rd 2016
+	Version 1.1 - June 6th 2016
 
 The SHA-1 hash algorithm, which first showed signs of weakness in 2005, is now considered dangerously susceptible to [collision attacks][1].  Any use of a publicly trusted CA private key to sign a SHA-1 hash exposes the Internet to significant risk.  Accordingly the CA/B Forum’s [Baseline Requirements][2] prohibit the issuance of new certificates with a SHA-1 based signature algorithm after 1st January 2016. Unfortunately some users of the publicly trusted PKI have failed to migrate in time and are still reliant on SHA-1 certificates for exceptionally [critical functionality][3].  These procedures outline the steps a CA can take to request an exception and obtain a new SHA-1 Certificate.
 
@@ -80,7 +80,7 @@ At some point after 10 business days have elapsed, Application Software Supplier
 * Grant the exception for a subset of Requested Certificates.
 * Grant the exception for all Requested Certificates.
 
-The response must be S/MIME or PGP signed in a way that the requesting CA can validate the authenticity of the request, and must CC public@cabforum.org 
+The response must be S/MIME or PGP signed in a way that the requesting CA can validate the authenticity of the request, and must CC public@cabforum.org.
 
 ## Step Four: Issuance
 
