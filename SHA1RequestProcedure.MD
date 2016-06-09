@@ -110,7 +110,7 @@ Each Application Software Supplier that granted an exception should also perform
 
 _Certificate Transparency log_: A certificate log as described in RFC 6962.
 
-_crt.sh link_: A URL in the form `https://crt.sh/?q=<hex_encode_ sha256_cert_hash>` which uniquely specifies a certificate and facilitates issuing audit proof queries against Certificate Transparency logs.
+_crt.sh link_: A URL in the form `https://crt.sh/?sha256=<hex_encode_ sha256_cert_hash>` which uniquely specifies a certificate and facilitates issuing audit proof queries against Certificate Transparency logs.
 
 _Exceptionally Issued Certificate_: A SHA-1 Certificate issued by a publicly trusted CA after 1st January 2016.
 
